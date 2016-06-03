@@ -4,6 +4,7 @@ app.use(express.static('public'));
 var jsrender = require('jsrender');
 var request1 = require("request");
 var bodyParser = require('body-parser');
+var cfenv = require('cfenv');
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({ extended: true })); 
 
@@ -74,9 +75,10 @@ app.post('/app', function (request, response) {
 	})
 	
 });
-
-app.listen(8000, function () {
-	console.log('listening on port 8000 !');
+var appEnv = cfenv.getAppEnv();
+app.listen(appEnv.port, '0.0.0.0', function() {
+  // print a message when the server starts listening
+  console.log("server starting on " + appEnv.url);
 });
 
 

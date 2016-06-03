@@ -1,11 +1,18 @@
 {
-  "name": "soa.2",
-  "version": "1.0.0",
-  "description": "Weather rest Api",
-  "main": "index.js",
-  "scripts": {
-    "test": "node index"
-  },
-  "author": "",
-  "license": "ISC"
+	"name": "NodejsStarterApp",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"express": "4.13.x",
+		"cfenv": "1.0.x",
+		"jsrender" : "^0.9.76",
+		"body-parser" : "^1.15.1"
+	},
+	"repository": {},
+	"engines": {
+		"node": "4.x"
+	} 
 }
