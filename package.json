@@ -9,7 +9,8 @@
 		"express": "4.13.x",
 		"cfenv": "1.0.x",
 		"jsrender" : "^0.9.76",
-		"body-parser" : "^1.15.1"
+		"body-parser" : "^1.15.1",
+		"request" : "latest"
 	},
 	"repository": {},
 	"engines": {
