@@ -8,5 +8,5 @@ node index.js
 ```
 ##open browser 
 ```
-http://localhost:8000
+http://localhost:port  where port is given in console
 ```
