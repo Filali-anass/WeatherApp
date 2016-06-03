@@ -1,0 +1,17 @@
+body{
+background-color : #E2E5F2;
+height: 100%;
+}
+
+#footer {
+	
+	width:100%;
+	height:10%;
+	position:fixed;
+	z-index : 9999;
+	bottom:-50px;
+	left:0;
+}
+#find{
+	margin-top : 10px;
+}

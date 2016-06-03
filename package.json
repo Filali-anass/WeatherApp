@@ -1,0 +1,11 @@
+{
+  "name": "soa.2",
+  "version": "1.0.0",
+  "description": "Weather rest Api",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "author": "",
+  "license": "ISC"
+}

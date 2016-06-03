@@ -1,0 +1,42 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+console.log("yoo!")
+   if (navigator.geolocation) {
+
+	  	navigator.geolocation.getCurrentPosition(function(position) {
+		    var lat=position.coords.latitude;
+		    var lon=position.coords.longitude;
+		    console.log(lat + " " + lon);
+		    var form = document.createElement("form");
+		    form.setAttribute("method", "POST");
+		    form.setAttribute("action", "/");
+
+		    var latitude = document.createElement("input");
+	            latitude.setAttribute("type", "hidden");
+	            latitude.setAttribute("name", latitude);
+	            latitude.setAttribute("value", lat);
+			var longitude = document.createElement("input");
+	            longitude.setAttribute("type", "hidden");
+	            longitude.setAttribute("name", longitude);
+	            longitude.setAttribute("value", lon);
+		    form.appendChild(longitude);
+		    form.appendChild(latitude);
+		        
+		    
+
+		    document.body.appendChild(form);
+		    form.submit();
+		   });
+	}
+	else {
+		window.location.href = 'http://localhost:8000/app';
+	}
+
+});
+</script>
+</head>
+</html>
