@@ -11,11 +11,7 @@
 		"jsrender" : "^0.9.76",
 		"body-parser" : "^1.15.1",
 		"request" : "latest"
-<<<<<<< HEAD
  	},
-=======
-	},
->>>>>>> 0cedfc004f3f14e053e6b6985e7e7d2d2d3fd085
 	"repository": {},
 	"engines": {
 		"node": "4.x"
